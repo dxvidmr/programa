@@ -9,7 +9,7 @@
 library(stylo)
 
 resultado = stylo(gui = F,
-                  corpus.dir = "corpus_1", # ruta a los textos. Por defecto corpus
+                  corpus.dir = "txt", # ruta a los textos. Por defecto corpus
                   # encoding = "UTF-8",
                   mfw.min = 100, 
                   mfw.max = 1000,
@@ -28,17 +28,17 @@ resultado = stylo(gui = F,
 
 # Source/Target con el nombre de los nodos (network.tables = "edges")
 # ¡Atención! El nombre del archivo se modifica según los parámetros elegidos.
-edgelist = read.csv("taller8_Consensus_100-1000_MFWs_Culled_0__Classic Delta_C_0.5_EDGES.csv")
+edgelist = read.csv("teatroplano-main_Consensus_100-1000_MFWs_Culled_0__Classic Delta_C_0.5_EDGES.csv")
 
 # stylo.network()----
 
 # Para usar la función stylo.network() es necesario tener instalado el paquete networkD3
-# install.packages('networkD3')
+install.packages('networkD3')
 
 # Valores por defecto de stylo.network() 100-1000 MFW.
 
 red = stylo.network(gui = F,
-              corpus.dir = "corpus_1",
+              corpus.dir = "txt",
               mfw.min = 100, 
               mfw.max = 1000,
               mfw.incr = 100, # mínimo 3 iteraciones para un consensus tree

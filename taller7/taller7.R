@@ -34,7 +34,7 @@ imposters(galbraith)
 # Si usas Mac y guardaste la carpeta novela en el escritorio:
 tokenized.texts = load.corpus.and.parse(files = "all", corpus.dir="Desktop/novela/corpus")
 # Si usas Windows y guardaste la carpeta novela en C:
-tokenized.texts = load.corpus.and.parse(files = "all", corpus.dir="C:/novela/corpus")
+tokenized.texts = load.corpus.and.parse(files = "all", corpus.dir="~/Archivos/PROJECTS/estiloUBU/novela/corpus")
 
 # creo una lista de las palabras más frecuentes (limitada a 5000, por ejemplo, 
 # pero lo puedo cambiar según el análisis):
